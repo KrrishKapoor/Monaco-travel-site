@@ -14,7 +14,7 @@ It includes:
 ---
 
 ## 🚀 Live Demo
-▶️ [View it on GitHub Pages](https://KrrishKapoor.github.io/monaco-travel-site/)  
+▶️ [View it on GitHub Pages](https://htmlpreview.github.io/?https://github.com/KrrishKapoor/Monaco-travel-site/blob/main/index.html)  
 
 ---
 
