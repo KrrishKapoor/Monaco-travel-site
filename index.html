@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krrish Kapoor - Monaco Travel Guide</title>
+  <style>
+    :root {
+      --primary-color: #e74c3c; /* Monaco red */
+      --secondary-color: #ffffff; /* Monaco white */
+      --text-color: #333;
+      --bg-color: #f9f9f9;
+    }
+
+    body.dark-theme {
+      --primary-color: #bdc3c7;
+      --secondary-color: #2c3e50;
+      --text-color: #f9f9f9;
+      --bg-color: #1a1a1a;
+    }
+
+    body {
+      font-family: 'Helvetica', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      padding: 20px 0;
+      font-size: 2.5em;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    header span {
+      flex: 1;
+      text-align: center;
+    }
+
+    nav {
+      background-color: var(--secondary-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 78px;
+      z-index: 999;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: bold;
+      transition: color 0.3s;
+      line-height: 50px;
+    }
+
+    nav a:hover {
+      color: #c0392b;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: var(--secondary-color);
+      transition: background-color 0.3s;
+    }
+
+    h1, h2, h3 {
+      color: var(--primary-color);
+    }
+
+    .highlight {
+      font-weight: bold;
+      text-decoration: underline;
+      font-style: italic;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #c0392b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      margin-top: 40px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin: 20px 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <span>Vacation Destination: Monaco</span>
+      <button onclick="toggleTheme()" style="position: absolute; right: 20px; font-size: 0.5em;">Toggle Dark Mode</button>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#why">Why Visit</a>
+    <a href="#cost">Cost</a>
+    <a href="#things">Things To Do</a>
+    <a href="#map">Map</a>
+    <a href="#unique">Unique Experiences</a>
+    <a href="#f1">Formula One</a>
+    <a href="#estimator">Cost Estimator</a>
+  </nav>
+
+  <div class="container">
+    <h1>Welcome to Monaco</h1>
+
+    <h2 id="why">Why Visit Monaco?</h2>
+    <p>Monaco, the second-smallest country in the world, is a stunning destination known for its opulence, stunning views of the Mediterranean, and rich history, particularly its association with <span class="highlight"><a href="#f1">Formula One Racing</a></span>. I chose Monaco because of its beautiful landscapes, luxurious lifestyle, and iconic status in the world of motorsports.</p>
+
+    <h3>Top 5 Reasons to Visit Monaco</h3>
+    <ul>
+      <li>The legendary Monte Carlo Casino, a symbol of glamour.</li>
+      <li>The annual Monaco Grand Prix, one of the most prestigious Formula One races.</li>
+      <li>Stunning views of the Mediterranean Sea and luxury yachts in the harbor.</li>
+      <li>Explore the historical Old Town, including the Prince’s Palace and Monaco Cathedral.</li>
+      <li>Experience world-class cuisine, high-end shopping, and nightlife.</li>
+    </ul>
+
+    <h3>How to Get There</h3>
+    <p>Monaco is best reached by flying into Nice Côte d'Azur Airport in France, which is about 30 km from Monaco. From Toronto, flights to Nice typically cost between $700 and $1000 CAD, depending on the season. From Nice, you can either take a 30-minute car ride or opt for a scenic helicopter ride directly into Monaco!</p>
+
+    <h3 id="things">Things to Do in Monaco</h3>
+    <ol>
+      <li>Visit the Monte Carlo Casino.</li>
+      <li>Explore the Oceanographic Museum.</li>
+      <li>Take a tour of the Prince’s Palace.</li>
+    </ol>
+    <p>In Monaco, you can enjoy a variety of activities, including visiting the world-renowned Monte Carlo Casino, exploring the Prince’s Palace, and walking through the exotic gardens. Don't miss the Monaco Grand Prix if you're there in May, and make sure to take a stroll through the old town, Monaco-Ville.</p>
+
+    <h2 id="cost">Estimated Cost Breakdown</h2>
+    <table>
+      <tr><th>Expense</th><th>Estimated Cost (CAD)</th></tr>
+      <tr><td>Flight (Toronto to Nice)</td><td>$800</td></tr>
+      <tr><td>Accommodation (7 days)</td><td>$2500</td></tr>
+      <tr><td>Food & Activities</td><td>$1000</td></tr>
+      <tr><td>Transportation</td><td>$150</td></tr>
+    </table>
+
+    <h2 id="map">Explore Monaco</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.040412566675!2d7.4197585!3d43.7384179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc28d2c949733%3A0x85c2a2a3f2582e30!2sMonaco!5e0!3m2!1sen!2sca!4v1680000000000!5m2!1sen!2sca"></iframe>
+
+    <h2 id="unique">Unique Experiences</h2>
+    <p>Monaco is one of the only places where you can witness a Formula One race through the city streets. The luxury and glamour of Monte Carlo are unparalleled, and the marina is filled with some of the most impressive yachts in the world.</p>
+
+    <h2>Things I Don't Like</h2>
+    <p>Monaco can be quite expensive, and during the peak tourist seasons, it can feel overcrowded. However, the quality of the experience more than makes up for these minor inconveniences.</p>
+
+    <h2>Beautiful Monaco</h2>
+    <img src="https://media.tacdn.com/media/attractions-content--1x-1/10/6e/96/28.jpg" alt="Monaco cityscape and harbor">
+
+    <h2 id="f1">History of Formula One at Monaco</h2>
+    <p>The Monaco Grand Prix is one of the most prestigious Formula One races in the world, known for its challenging narrow streets and tight corners. The race has been held annually since 1929, and it continues to be a highlight of the Formula One calendar. Monaco’s unique circuit winds through the streets of Monte Carlo and along the harbor, providing a spectacular backdrop for fans and drivers alike.</p>
+    <p>One of Monaco’s most exciting moments came in 2024 when the local hero, Charles Leclerc, who was born and raised in Monaco, won his first Monaco Grand Prix. Leclerc's victory was a dream come true for both him and the people of Monaco, solidifying his place in Formula One history as a hometown hero.</p>
+    <p>Monaco is a <span class="highlight">must-visit</span> destination for <span class="highlight"><a href="https://www.formula1.com/" target="_blank">Formula One</a></span> fans and anyone seeking luxury travel.</p>
+
+    <h2 id="estimator">Trip Cost Estimator</h2>
+    <p>Enter the number of days you'd like to stay:</p>
+    <input type="number" id="days" placeholder="e.g. 7">
+    <button onclick="calculateCost()">Estimate Cost</button>
+    <p id="result"></p>
+
+    <h3>More Information</h3>
+    <p>Learn more about <a href="#things">what to do in Monaco</a> or visit the <a href="https://cotedazurfrance.com/discover/cities-on-the-cote-dazur/discover-monaco/top-things-to-see-and-do-in-monaco/" target="_blank">official Monaco travel page</a>.</p>
+    <p>For more details, feel free to <a href="mailto:krrishkapoor3103@gmail.com?subject=re:%20Info%20on%20Monaco">email me</a>.</p>
+  </div>
+
+  <footer>
+    &copy; 2024 by Krrish Kapoor | Monaco Travel Experience
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-theme');
+    }
+
+    function calculateCost() {
+      const days = document.getElementById('days').value;
+      if (days > 0) {
+        const total = days * 500;
+        document.getElementById('result').innerText = `Estimated trip cost: $${total} CAD`;
+      } else {
+        document.getElementById('result').innerText = 'Please enter a valid number of days.';
+      }
+    }
+  </script>
+</body>
+</html>
